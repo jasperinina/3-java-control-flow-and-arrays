@@ -11,7 +11,23 @@ public class Task06Main {
 
     static int getMax(int a, int b, int c, int d) {
 
-        return Math.max(Math.max(Math.max(a, b), c), d);
+        int max = a;
+
+        if (b > max) {
+            max = b;
+        }
+
+        if (c > max) {
+            max = c;
+        }
+
+        if (d > max) {
+            max = d;
+        }
+
+        return max;
+
+        // return Math.max(Math.max(Math.max(a, b), c), d);
     }
 
 }

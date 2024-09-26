@@ -17,9 +17,19 @@ public class Task09Main {
 
     static int min(int[] arr) {
 
-        Arrays.sort(arr);
+        int min = arr[0];
 
-        return arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+
+        return min;
+
+        // Arrays.sort(arr);
+
+        // return arr[0];
     }
 
 }
